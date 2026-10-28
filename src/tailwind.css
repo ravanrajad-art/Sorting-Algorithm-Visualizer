@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 min-w-[320px] bg-[#07111e] font-sans text-[#dbe8f5] antialiased;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-xl border border-[#1d3446] bg-[#0b1b2a];
+  }
+
+  .sub-panel {
+    @apply rounded-lg border border-[#1b3446] bg-[#0a1927];
+  }
+
+  .section-label {
+    @apply font-mono text-[10px] font-medium tracking-[0.13em] text-[#6d8297];
+  }
+
+  .section-title {
+    @apply mt-1.5 text-lg font-semibold tracking-[-0.03em] text-[#e9f3fa];
+  }
+
+  .primary-button {
+    @apply inline-flex items-center gap-2 rounded-md bg-[#55decb] px-3 py-2 text-[11px] font-bold text-[#061620];
+  }
+
+  .secondary-button {
+    @apply inline-flex items-center gap-2 rounded-md bg-[#142b3c] px-3 py-2 text-[11px] text-[#91a9ba];
+  }
+
+  .icon-tile {
+    @apply grid h-[29px] w-[29px] place-items-center rounded-lg bg-[#55decb]/[0.13] text-[#55decb];
+  }
+
+  .metric-row {
+    @apply flex items-center justify-between border-b border-[#142a3b] py-2.5;
+  }
+}
